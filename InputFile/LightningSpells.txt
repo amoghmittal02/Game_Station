@@ -1,0 +1,5 @@
+Name/cost/required level/damage/mana cost/type
+Lightning_Dagger      400        1       500     150    Lighting
+Thunder_Blast         750        4       950     400    Lighting
+Electric_Arrows       550        5       650     200    Lighting
+Spark_Needles         500        2       600     200    Lighting
