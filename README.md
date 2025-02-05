@@ -1,29 +1,27 @@
 Guide to Readme.txt or Readme.md
 Required sections: Header, Files, Notes, How to compile and run, I/O Example
 
-# CS611-Assignment 5
+# Game Station
 ## Tic Tac Toe // Order and Chaos // Super Tic Tac Toe // Quoridor // Monsters and Heroes // Legends of Valor
 ---------------------------------------------------------------------------
-Member 1:
-- Name: Yibo Zhou
-- Email: ybzhou02@bu.edu
-- Student ID: U69057986
-
-Member 2:
 - Name: Amogh Mittal
-- Email: amittal2@bu.edu
-- Student ID: U65464717
+- Email: amoghmittal02@gmail.com
+- LinkedIn: https://www.linkedin.com/in/amogh-mittal-1b3b921bb/
+
+## Why this project?
+---------------------------------------------------------------------------
+This project allows users to play a variety of board games directly in the terminal, with the flexibility to scale and incorporate additional games. Developed iteratively, it started with a simple Tic Tac Toe implementation and progressively expanded, reusing core code, classes, and packages for efficiency. The design follows Object-Oriented Software Principles to ensure modularity and maintainability.
 
 ## Files
 ---------------------------------------------------------------------------
-I reuse **all classes in Monster and Hero game** and some classes in other games such as **Board, ChessPiece, InputRule and other** classes.
-Also, to implement new requirements in this assignment, I create new classes and interfaces below.
+I reused **all classes in Monster and Hero game** and some classes in other games such as **Board, ChessPiece, InputRule and other** classes.
+Also, to implement new requirements for the last game, I created new classes and interfaces below.
 ### Entity Class
-1. I create 5 new space classes: BushSpace, CaveSpace, KoulouSpace, NexuSpace and ObstacleSpace. **They are subclasses of Space class, the same as other spaces in Monsters and Heroes**.
+1. I created 5 new space classes: BushSpace, CaveSpace, KoulouSpace, NexuSpace and ObstacleSpace. **They are subclasses of Space class, the same as other spaces in Monsters and Heroes**.
 ### Interface and Implementation Class
-1. To implement some design patterns and some functions of the game, I design a series of interfaces.
+1. To implement some design patterns and some functions of the game, I designed a series of interfaces.
 2. **SpaceExtraIncrease** interface is used to implement increasing specific attribute while heroes enter specific space. And this is for **Decorator Pattern implementation**.
-3. **HeroFactory, MonsterFactory and ItemFactory** interfaces are used to implement **Factory Pattern** while building different heroes, monsters and items. All fatory classes in **Interface.Impl** package are implementation classes of one of these three interfaces.
+3. **HeroFactory, MonsterFactory and ItemFactory** interfaces are used to implement **Factory Pattern** while building different heroes, monsters and items. All factory classes in **Interface.Impl** package are implementation classes of one of these three interfaces.
 4. **ChoiceStrategy** interface is used to implement **Strategy Pattern** while processing heroes' choices during fights. **EquipArmor, EquipSpell, EquipWeapon, PotionUse** classes in **Interface.Impl** package are implementation classes of this interface.
 ### Game Controller Class
 1. **LOVController** class controls the whole process of the game.
@@ -62,10 +60,10 @@ Also, to implement new requirements in this assignment, I create new classes and
 5. Due to make sure related operations can be handled well, I design a lot of prompts, some may be too much, but these can assist the player to play properly and understand the game well.
 
 ### Design Pattern
-1. I use **Factory Pattern** to initialize all heroes, monsters, spaces and items.
-2. I use **Strategy Pattern** to handle all equipment related operations.
-3. I also try to use **Observer Pattern** in fights, but I do not realize yet. However, when I deal with fights, I use Observer Pattern ideas.
-4. I use **Decorator Pattern** to implement increasing specific attribute while heroes enter specific space.
+1. I used **Factory Pattern** to initialize all heroes, monsters, spaces and items.
+2. I used **Strategy Pattern** to handle all equipment related operations.
+3. I also tried to use **Observer Pattern** in fights, but I do not realize yet. However, when I deal with fights, I use Observer Pattern ideas.
+4. I used **Decorator Pattern** to implement increasing specific attribute while heroes enter specific space.
 
 ### Multipliers
 1. A lot of the base settings are unbalanced, so I set a lot of multipliers to balance the game. They are in the Config package.
